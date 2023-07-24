@@ -2,7 +2,8 @@
 Database models.
 """
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
+from django.contrib.auth.models import AbstractBaseUser, \
+    BaseUserManager, PermissionsMixin
 
 
 class UserManager(BaseUserManager):
@@ -21,7 +22,7 @@ class UserManager(BaseUserManager):
     def create_superuser(self, email, password):
         """
         Create and return a new superuser.
-        
+
         admin@example.com
         4Dm!n123
         """
